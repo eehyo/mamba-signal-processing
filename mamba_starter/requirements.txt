@@ -1,0 +1,10 @@
+# Tested with Python 3.12.14; use Python 3.12 for the reference environment.
+# Install the CPU/GPU build of torch first (see README); +cpu satisfies ==2.5.1.
+torch==2.5.1
+numpy==2.3.5
+scipy==1.17.0
+scikit-learn==1.8.0
+matplotlib==3.10.8
+joblib==1.5.3
+einops==0.8.2
+pytest==9.1.1

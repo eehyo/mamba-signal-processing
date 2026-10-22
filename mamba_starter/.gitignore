@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+data/
+runs/
+*.pt
+*.joblib
+pytest-of-root/
+tmp*/

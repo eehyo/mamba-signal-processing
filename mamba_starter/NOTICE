@@ -1,0 +1,24 @@
+Project Mamba course starter, prepared 2026-10-21.
+
+mamba_block.py and the normalization/residual structure in models.py are adapted
+from John Ma's mamba-minimal, licensed under the Apache License, Version 2.0:
+https://github.com/johnma2006/mamba-minimal
+
+An unmodified model.py snapshot is distributed as third_party/mamba_minimal.py.
+Its exact SHA-256 and upstream retrieval reference are in third_party/upstream.json.
+The upstream license is reproduced in third_party/mamba-minimal-LICENSE and LICENSE.
+
+Changes: a classification input/output wrapper, explicit parameter initialization,
+constant-parameter LTI SSM, delta scaling and elapsed-time multipliers, right-padding
+mask support, detached CPU recordings, convolution checks, dataset loaders,
+signal/image utilities, training/evaluation scripts, and tests. No pretrained
+language-model weights or original datasets are distributed in this archive.
+
+Dataset references (downloaded separately):
+Reyes-Ortiz et al., Human Activity Recognition Using Smartphones, UCI Machine
+Learning Repository, DOI 10.24432/C54S4K (2013), CC BY 4.0.
+Xiao, Rasul and Vollgraf, Fashion-MNIST: a Novel Image Dataset for Benchmarking
+Machine Learning Algorithms, arXiv:1708.07747 (2017), Zalando Research.
+
+Educational code is provided under Apache-2.0. It does not imply endorsement
+by the original Mamba authors, dataset authors, or the upstream repository.
