@@ -181,6 +181,22 @@ def load_fashion(root, split="train", *, allow_test=False, download=False):
 
 
 def image_sequences(images, cfg, size=None, method=None):
+    if cfg["image_filter"] == "t5_bilinear":
+        from t5_preprocess import downsample as downsample_t5
+        from t5_scan import apply_scan, scan_indices
+
+        if cfg["image_size"] != 14 or cfg["image_mode"] != "pixel":
+            raise ValueError("t5_bilinear requires 14×14 pixel mode")
+        if size not in (None, 14) or method not in (None, "t5_bilinear"):
+            raise ValueError("T5 evaluation requires the same 14×14 preprocessing")
+        scan = cfg["scan"]
+        direction = scan if scan in ("raster", "column") else "raster"
+        condition = "axis_aligned" if scan in ("raster", "column") else scan
+        indices = scan_indices(condition, direction=direction, seed=cfg["permutation_seed"])
+        return apply_scan(downsample_t5(images), indices)[..., None]
+    if method == "t5_bilinear":
+        raise ValueError("t5_bilinear is only supported for T5 checkpoints")
+
     # Two-stage 28->training size->test size isolates the T6 intervention.
     x = resize_images(images.astype(np.float32) / 255, cfg["image_size"], cfg["image_filter"])
     if size is not None and size != cfg["image_size"]:

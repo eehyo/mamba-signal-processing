@@ -58,7 +58,7 @@ def main():
     p.add_argument("--keep_rate", type=float)
     p.add_argument("--gap_mode", choices=["ignore","interpolate","delta","channel"])
     p.add_argument("--image_size", type=int)
-    p.add_argument("--image_filter", choices=["blur","average","naive"])
+    p.add_argument("--image_filter", choices=["blur","average","naive","t5_bilinear"])
     p.add_argument("--device", default="cpu")
     p.add_argument("--threads", type=int, default=2)
     args = p.parse_args()

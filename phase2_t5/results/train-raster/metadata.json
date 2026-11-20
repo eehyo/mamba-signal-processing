@@ -1,0 +1,19 @@
+{
+  "split": "train",
+  "image_count": 60000,
+  "shape": [
+    14,
+    14
+  ],
+  "axis_direction": "raster",
+  "random_seed": 42,
+  "block_size": [
+    2,
+    2
+  ],
+  "spiral_start_row_col": [
+    6,
+    6
+  ],
+  "numpy": "2.2.6"
+}

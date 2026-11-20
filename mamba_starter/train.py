@@ -132,9 +132,9 @@ def parser():
     p.add_argument("--downsample_factor", type=int, choices=[1,2,4,8], default=1)
     p.add_argument("--downsample_method", choices=["aa", "naive"], default="aa")
     p.add_argument("--gap_mode", choices=["ignore","interpolate","delta","channel"], default="ignore")
-    p.add_argument("--image_filter", choices=["blur","average","naive"], default="blur")
+    p.add_argument("--image_filter", choices=["blur","average","naive","t5_bilinear"], default="blur")
     p.add_argument("--image_mode", choices=["pixel","row"], default="pixel")
-    p.add_argument("--scan", choices=["raster","snake","column","random"], default="raster")
+    p.add_argument("--scan", choices=["raster","snake","column","random","blockwise","spiral"], default="raster")
     p.add_argument("--device", default="cuda" if torch.cuda.is_available() else "cpu")
     return p
 

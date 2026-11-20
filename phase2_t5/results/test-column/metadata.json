@@ -1,0 +1,19 @@
+{
+  "split": "test",
+  "image_count": 10000,
+  "shape": [
+    14,
+    14
+  ],
+  "axis_direction": "column",
+  "random_seed": 42,
+  "block_size": [
+    2,
+    2
+  ],
+  "spiral_start_row_col": [
+    6,
+    6
+  ],
+  "numpy": "2.2.6"
+}

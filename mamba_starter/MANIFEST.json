@@ -4,8 +4,9 @@
   "NOTICE": "aaf8e45acb35a77ff1bb8be557231fc824804dc5f4c41f4434e17319e285aef3",
   "README.md": "b9f9d7ae404f71f94c240e1ba4aa2d22bc1241ee6c5a5b5f06a4f2a6057bc06c",
   "VERSION.txt": "2c6a06801c4c5459d67f70353c742dbf83307a5f764cd8e94414fc1a1a152ac5",
-  "data.py": "fdb72c3716a164afa2ebe4341077e6672cec8d42801cf5a114253d680e18d509",
-  "evaluate.py": "4a2187ee4d718ac3f6923928593c4f4e6338c014340abe21ab127bea202a7fde",
+  "analyze_t5.py": "0e4f7394d49c8c4a07950dc55077ad36ab96b6403d48a3649e844c58152b14ba",
+  "data.py": "bac5dd283fb84a0ad6c32f97f9e9ebfd5f91f718ed471f709303892ecc9b3c42",
+  "evaluate.py": "7cddd80add6960a7ea3bcd3ec015ac514e8545ae5b40ba68f4a7206f2529f835",
   "examples/hooks.py": "cb5c34a7c4405e257eb61a02abcb67923ba4ac22b8e8f8d727ea80c24b689029",
   "image_utils.py": "5d89387d5206fce60b52882bda3170bead7f02fb49fea3f0b526b3fbba8b5470",
   "mamba_block.py": "038556001f1508849a1b5a1eaefd12b23c03f3a8bb917b6bc4de34ac0320811d",
@@ -13,6 +14,8 @@
   "pytest.ini": "c28d7ee43186a578bc0f8867e26fdf7edcb0f1275b12d71d85a20e95a524c4ef",
   "requirements.txt": "ea897fd6bcbc4ab4c6098115bab29585f7449721d2db950d34c9bc7e4e61cbee",
   "signal_utils.py": "c341189f18f12e815e4ef71ce8b689fe2eb96abfb3f4e91da028d2993d8c4ea7",
+  "t5_preprocess.py": "d9bcc24fe21d70a7b4d26fbe728781941235b5b0d38dd67b758619029ca86532",
+  "t5_scan.py": "c49da51ad5d045fb2c3ccaf952fe4eaeac6249b5131cbfe455ee1a236b468697",
   "tests/conftest.py": "a55ec1c9a78a402d53614cc87c277b2e4023b555a5e2c9cd962599b1a5a13097",
   "tests/test_mamba.py": "07f657e623d0059b38ecc53fc89cdc5f3053563193fbeb2c08b495843eb01c67",
   "tests/test_review_regressions.py": "f3c71432cefdcf3fd51291778edc009305624984bd78eeaf76e60afd0e23ff01",
@@ -20,6 +23,6 @@
   "third_party/mamba-minimal-LICENSE": "760939b000194d04548ede6a857bbe735d1695d8422ec85955c8e2bd7f4b95c5",
   "third_party/mamba_minimal.py": "8dbc70c8944fa75a0f211aa53d5ff60f82315c814c5dbedb519ba0dc42bc5d3a",
   "third_party/upstream.json": "0cac4f2a748f820f451baf7c9306f04432669f1f83ac41a9d272d25a1cfba7c2",
-  "train.py": "59c1d734f706554058f4c33c1eb3b13ca53c017d9e8c24cd1f99f14cedb55a24",
+  "train.py": "261ad31f3963f268a86108a2dd48e3796cc606823ed9ef664a02f602be9b5f58",
   "train_ema.py": "7d62a8550a3bb0d5db7ace057d925023caed5ecf8db562e58632a1cd41694efb"
 }
