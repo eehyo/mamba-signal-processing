@@ -1,0 +1,137 @@
+{
+  "checkpoints-dconv1/raster/seed_0/best.pt": {
+    "sha256": "9d3bd68ec79ea8a4d6f389f92af67a0040355f48a43a25f029604a6d2011c197",
+    "size_bytes": 268655,
+    "versions": {
+      "python": "3.12.15",
+      "torch": "2.9.1+cu130",
+      "numpy": "2.5.4"
+    }
+  },
+  "checkpoints-dconv1/raster/seed_1/best.pt": {
+    "sha256": "89ba87111bb763b9282d69016ddfbb8a0d7ab9c5e5fc023679af086f44dc786a",
+    "size_bytes": 268655,
+    "versions": {
+      "python": "3.12.15",
+      "torch": "2.9.1+cu130",
+      "numpy": "2.5.4"
+    }
+  },
+  "checkpoints-dconv1/raster/seed_2/best.pt": {
+    "sha256": "23ffafb7918c183b28509049b845d28e9ba54a543b545e5559544e52efa52d86",
+    "size_bytes": 268655,
+    "versions": {
+      "python": "3.12.15",
+      "torch": "2.9.1+cu130",
+      "numpy": "2.5.4"
+    }
+  },
+  "checkpoints-dconv1/snake/seed_0/best.pt": {
+    "sha256": "4da50a8ed50b91873bd5b2ac33d7c4059fa932036a39038e203a738874c0ab38",
+    "size_bytes": 268655,
+    "versions": {
+      "python": "3.12.15",
+      "torch": "2.9.1+cu130",
+      "numpy": "2.5.4"
+    }
+  },
+  "checkpoints-dconv1/snake/seed_1/best.pt": {
+    "sha256": "19af256248b2c41276d763117c40b1cf06b6cc8bb57c2503c21838c8308a0877",
+    "size_bytes": 268655,
+    "versions": {
+      "python": "3.12.15",
+      "torch": "2.9.1+cu130",
+      "numpy": "2.5.4"
+    }
+  },
+  "checkpoints-dconv1/snake/seed_2/best.pt": {
+    "sha256": "61e15646de91f42106e357ed646c0b841c90d33b6891a045681747fac6e3e420",
+    "size_bytes": 268655,
+    "versions": {
+      "python": "3.12.15",
+      "torch": "2.9.1+cu130",
+      "numpy": "2.5.4"
+    }
+  },
+  "checkpoints-dconv1/random/seed_0/best.pt": {
+    "sha256": "4866d5faa07353d1e3094a92b096f77dbcdd9c0358747fdf16f2685cec52dde9",
+    "size_bytes": 268655,
+    "versions": {
+      "python": "3.12.15",
+      "torch": "2.9.1+cu130",
+      "numpy": "2.5.4"
+    }
+  },
+  "checkpoints-dconv1/random/seed_1/best.pt": {
+    "sha256": "0ef1a47e86705fda988f5950daa19dce1f10cecddc66e683b6b9544e0991d51d",
+    "size_bytes": 268655,
+    "versions": {
+      "python": "3.12.15",
+      "torch": "2.9.1+cu130",
+      "numpy": "2.5.4"
+    }
+  },
+  "checkpoints-dconv1/random/seed_2/best.pt": {
+    "sha256": "3996280ffa388b29ce7b2031c1b992c30bbd57bbaffe3ce07d4ab2eff4f60411",
+    "size_bytes": 268655,
+    "versions": {
+      "python": "3.12.15",
+      "torch": "2.9.1+cu130",
+      "numpy": "2.5.4"
+    }
+  },
+  "checkpoints-dconv1/blockwise/seed_0/best.pt": {
+    "sha256": "3e665be9b4611af7e4cf5f909dd6640624744074a6205e43a21d09b331e6a282",
+    "size_bytes": 268655,
+    "versions": {
+      "python": "3.12.15",
+      "torch": "2.9.1+cu130",
+      "numpy": "2.5.4"
+    }
+  },
+  "checkpoints-dconv1/blockwise/seed_1/best.pt": {
+    "sha256": "df88ebfafdda0609a56d942505d8a3d3dcd899becd33781f917c03a9f380b7e8",
+    "size_bytes": 268655,
+    "versions": {
+      "python": "3.12.15",
+      "torch": "2.9.1+cu130",
+      "numpy": "2.5.4"
+    }
+  },
+  "checkpoints-dconv1/blockwise/seed_2/best.pt": {
+    "sha256": "2c05bc922a46e76628c6cc9e19499982ba69f2570dcc493c113c5d4bdc25a9a4",
+    "size_bytes": 268655,
+    "versions": {
+      "python": "3.12.15",
+      "torch": "2.9.1+cu130",
+      "numpy": "2.5.4"
+    }
+  },
+  "checkpoints-dconv1/spiral/seed_0/best.pt": {
+    "sha256": "55009b3e1aa2a579483d8b9f283444313826beae6c58422ab93c21dff074fe7b",
+    "size_bytes": 268655,
+    "versions": {
+      "python": "3.12.15",
+      "torch": "2.9.1+cu130",
+      "numpy": "2.5.4"
+    }
+  },
+  "checkpoints-dconv1/spiral/seed_1/best.pt": {
+    "sha256": "6ca8bb9302a2c5382451d38995dd039ae4f1b77d55dbf2a7da60d26bfa63568e",
+    "size_bytes": 268655,
+    "versions": {
+      "python": "3.12.15",
+      "torch": "2.9.1+cu130",
+      "numpy": "2.5.4"
+    }
+  },
+  "checkpoints-dconv1/spiral/seed_2/best.pt": {
+    "sha256": "1b57b90ecdf3e7172ea09fd1a9e56e948087846da6c2960c77de906a9cfc485d",
+    "size_bytes": 268655,
+    "versions": {
+      "python": "3.12.15",
+      "torch": "2.9.1+cu130",
+      "numpy": "2.5.4"
+    }
+  }
+}
