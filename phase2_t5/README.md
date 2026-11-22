@@ -73,6 +73,7 @@ model_input = sequences[..., None]        # (32, 196, 1), 채널 축이 필요�
 | `path_step_psd.csv`, `path_periodicity.csv`, `path_periodicity.png` | 좌표 이동 성분의 PSD와 lag별 이동 벡터 반복 |
 
 ## Mamba 검증 실행
+[완료된 Mamba 검증 결과와 체크포인트 사용법](results/mamba-validation/README.md)
 [분류 실험 및 최종 평가 절차](PROTOCOL.md)
 
 `t5_bilinear`는 분석 코드와 동일한 14×14 전처리 및 다섯 순열을 적용한다. 이후 starter의 Standardizer는 학습 split에서만 스칼라 평균과 표준편차를 적합한다.

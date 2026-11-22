@@ -28,6 +28,6 @@ Random의 14 인덱스는 고정 순열에서 최대였던 bin의 역수다. 해
 | 재효 | 다섯 스캔 × 3 seeds Mamba 분류, 1D CNN baseline, accuracy·macro-F1·혼동행렬 |
 | 효정 | 통제 실험 및 causal convolution ablation, 성능 차이 해석 |
 
-팀 최종 결과에는 최소 3개 모델 학습 seed의 평균과 표준편차, accuracy, macro-F1, 혼동행렬, baseline 비교를 포함한다. Random 순열 seed 42는 모델 학습 seed와 별개로 고정한다. 모델 결과가 준비되면 다섯 조건을 기준으로 이 표와 연결한다. 현재 상태는 변환·신호 분석 완료이며, 분류 성능과의 연결은 남아 있다.
+팀 최종 결과에는 최소 3개 모델 학습 seed의 평균과 표준편차, accuracy, macro-F1, 혼동행렬, baseline 비교를 포함한다. Random 순열 seed 42는 모델 학습 seed와 별개로 고정한다. 모델 결과가 준비되면 다섯 조건을 기준으로 이 표와 연결한다. 변환·신호 분석과 Mamba 학습·검증 15회가 완료됐다. 검증 지표 연결표, seed별 혼동행렬, 체크포인트 사용법은 [Mamba 검증 결과](results/mamba-validation/README.md)에 있다. 공식 테스트 결과와의 연결은 최종 평가 이후 진행한다.
 
 Proposal에서 가설·반증 기준·실험 설계·역할을 최종 모델 평가 전에 확정한다. 예를 들어 스캔별 성능 차이가 공통 학습 seed에서 일관되는지, 신호 지표 차이와 같은 방향인지 사전에 정의한다. 성능이 포화해 seed 변동과 구분하기 어렵다면 모든 스캔에 동일한 난이도 조정을 검토한다. 최종 보고서와 발표에는 Mamba 기본 원리 설명을 포함한다.

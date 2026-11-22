@@ -1,0 +1,152 @@
+{
+  "checkpoints/raster/seed_0/best.pt": {
+    "sha256": "aa1e3a34aca5794cc7555ff508dce8f7bc808f9929d2a118918594cb5b4cde2d",
+    "size_bytes": 270127,
+    "versions": {
+      "python": "3.10.18",
+      "torch": "2.9.0+cu128",
+      "numpy": "2.2.6"
+    },
+    "training_host": "daissv2"
+  },
+  "checkpoints/raster/seed_1/best.pt": {
+    "sha256": "0545715fc5e8e5dc4ec0dbf568aa3c8660a46eae0bfa7911ce9a5e1f168f98cf",
+    "size_bytes": 270127,
+    "versions": {
+      "python": "3.10.18",
+      "torch": "2.9.0+cu128",
+      "numpy": "2.2.6"
+    },
+    "training_host": "daissv2"
+  },
+  "checkpoints/raster/seed_2/best.pt": {
+    "sha256": "aeb0c9da62829d8eee9eb35dc1a494dc0b1ffbb726979fb13c5ff07ac569985b",
+    "size_bytes": 270127,
+    "versions": {
+      "python": "3.10.19",
+      "torch": "2.13.0+cu130",
+      "numpy": "2.2.6"
+    },
+    "training_host": "daissv3"
+  },
+  "checkpoints/snake/seed_0/best.pt": {
+    "sha256": "6236dbd3ca50c89c5400d42f6ce46f26c1361baaffcb20f895cad3e53e679639",
+    "size_bytes": 270127,
+    "versions": {
+      "python": "3.10.19",
+      "torch": "2.13.0+cu130",
+      "numpy": "2.2.6"
+    },
+    "training_host": "daissv3"
+  },
+  "checkpoints/snake/seed_1/best.pt": {
+    "sha256": "75ed75eb5ef81487694034a37be6808c575a63e40edfbc4628c710a98d396d91",
+    "size_bytes": 270127,
+    "versions": {
+      "python": "3.10.19",
+      "torch": "2.13.0+cu130",
+      "numpy": "2.2.6"
+    },
+    "training_host": "daissv3"
+  },
+  "checkpoints/snake/seed_2/best.pt": {
+    "sha256": "826d04d00c73aae0b772132fae9092ac867bf5480dfbb4818e243b08d177c4cb",
+    "size_bytes": 270127,
+    "versions": {
+      "python": "3.10.19",
+      "torch": "2.13.0+cu130",
+      "numpy": "2.2.6"
+    },
+    "training_host": "daissv3"
+  },
+  "checkpoints/random/seed_0/best.pt": {
+    "sha256": "1905a5848eb15849763ae96e1af185486bf937af25c519c17a472e6928165e4a",
+    "size_bytes": 270127,
+    "versions": {
+      "python": "3.10.19",
+      "torch": "2.13.0+cu130",
+      "numpy": "2.2.6"
+    },
+    "training_host": "daissv3"
+  },
+  "checkpoints/random/seed_1/best.pt": {
+    "sha256": "f11fa6298f4597de8a4d76d4fe6a16421a2c625553a9fbfbf11c21a60847ffb9",
+    "size_bytes": 270127,
+    "versions": {
+      "python": "3.10.19",
+      "torch": "2.13.0+cu130",
+      "numpy": "2.2.6"
+    },
+    "training_host": "daissv3"
+  },
+  "checkpoints/random/seed_2/best.pt": {
+    "sha256": "bbe9d4e3dd8981ccefa8f080f205c2ce5679de49b1515c95ce8e2bfffb4dc948",
+    "size_bytes": 270127,
+    "versions": {
+      "python": "3.10.19",
+      "torch": "2.13.0+cu130",
+      "numpy": "2.2.6"
+    },
+    "training_host": "daissv3"
+  },
+  "checkpoints/blockwise/seed_0/best.pt": {
+    "sha256": "3ad769fbf189765f437a0d3464bc9f286b99075aa95fc29aa27b473eb6e487d4",
+    "size_bytes": 270127,
+    "versions": {
+      "python": "3.10.19",
+      "torch": "2.13.0+cu130",
+      "numpy": "2.2.6"
+    },
+    "training_host": "daissv3"
+  },
+  "checkpoints/blockwise/seed_1/best.pt": {
+    "sha256": "a9d849f8630cec995dd95179ea774a950f1e501d0d58427ec2c9c5c1964193c7",
+    "size_bytes": 270127,
+    "versions": {
+      "python": "3.10.19",
+      "torch": "2.13.0+cu130",
+      "numpy": "2.2.6"
+    },
+    "training_host": "daissv3"
+  },
+  "checkpoints/blockwise/seed_2/best.pt": {
+    "sha256": "c9b80494a48668493c4d3fe329baf1e3d4cd07eed837cf4547e621f29da977c5",
+    "size_bytes": 270127,
+    "versions": {
+      "python": "3.10.19",
+      "torch": "2.13.0+cu130",
+      "numpy": "2.2.6"
+    },
+    "training_host": "daissv3"
+  },
+  "checkpoints/spiral/seed_0/best.pt": {
+    "sha256": "c492d43525324c5c18105d4215a61fb2a46091c429ba641d8152dd6b06bc2f32",
+    "size_bytes": 270127,
+    "versions": {
+      "python": "3.10.19",
+      "torch": "2.13.0+cu130",
+      "numpy": "2.2.6"
+    },
+    "training_host": "daissv3"
+  },
+  "checkpoints/spiral/seed_1/best.pt": {
+    "sha256": "06c8e2d628b31346a4ce1a6c836b95357f0b24b9ec9ebb315eebca60f4b7edbb",
+    "size_bytes": 270127,
+    "versions": {
+      "python": "3.10.19",
+      "torch": "2.13.0+cu130",
+      "numpy": "2.2.6"
+    },
+    "training_host": "daissv3"
+  },
+  "checkpoints/spiral/seed_2/best.pt": {
+    "sha256": "4c29b05468efe35165f3e6f8de68feb0782347785f594f166e2810d195ec65a8",
+    "size_bytes": 270127,
+    "versions": {
+      "python": "3.10.19",
+      "torch": "2.13.0+cu130",
+      "numpy": "2.2.6"
+    },
+    "training_host": "daissv3"
+  }
+}
