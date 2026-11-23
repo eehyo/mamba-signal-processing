@@ -1,0 +1,11 @@
+model,scan,seeds,mean_diff_vs_raster,positive_seeds,consistency
+mamba,snake,3,0.002823434949713192,2,mixed
+mamba,random,3,-0.012451114180840031,0,consistent ↓
+mamba,blockwise,3,-0.003798529551635436,1,mixed
+mamba,spiral,3,-0.009258874140887552,0,consistent ↓
+mamba,spiral_inward,3,-0.003242255068391412,1,mixed
+cnn,snake,3,0.002621348320647865,1,mixed
+cnn,random,3,-0.00022257522491875292,2,mixed
+cnn,blockwise,3,-0.00506212114754064,1,mixed
+cnn,spiral,3,-0.009440348781936928,0,consistent ↓
+cnn,spiral_inward,3,-0.013304231399124844,0,consistent ↓

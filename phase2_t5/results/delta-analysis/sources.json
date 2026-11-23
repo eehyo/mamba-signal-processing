@@ -1,0 +1,32 @@
+{
+  "blockwise": {
+    "checkpoint": "../../outputs/t5-mamba-validation/blockwise/seed_0/best.pt",
+    "best_epoch": 20,
+    "val_macro_f1": 0.866816356731366
+  },
+  "random": {
+    "checkpoint": "../../outputs/t5-mamba-validation/random/seed_0/best.pt",
+    "best_epoch": 15,
+    "val_macro_f1": 0.8544790676047077
+  },
+  "raster": {
+    "checkpoint": "../../outputs/t5-mamba-validation/raster/seed_0/best.pt",
+    "best_epoch": 17,
+    "val_macro_f1": 0.8722993930002513
+  },
+  "snake": {
+    "checkpoint": "../../outputs/t5-mamba-validation/snake/seed_0/best.pt",
+    "best_epoch": 20,
+    "val_macro_f1": 0.8720680101746046
+  },
+  "spiral": {
+    "checkpoint": "../../outputs/t5-mamba-validation/spiral/seed_0/best.pt",
+    "best_epoch": 20,
+    "val_macro_f1": 0.8658459884456308
+  },
+  "spiral_inward": {
+    "checkpoint": "../../outputs/t5-mamba-validation-extra/spiral_inward_seed0/seed_0/best.pt",
+    "best_epoch": 17,
+    "val_macro_f1": 0.8694742809314361
+  }
+}

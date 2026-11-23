@@ -80,7 +80,7 @@ def train_seed(cfg, seed, xtr, ytr, xva, yva, norm, manifest):
                                    {"params": groups[False], "weight_decay": 0.0}], lr=cfg["lr"])
     train_loader = make_loader(xtr, ytr, cfg, shuffle=True, seed=seed)
     val_loader = make_loader(xva, yva, cfg, validation=True)
-    best_score, best_metrics, history = -1.0, None, []
+    best_score, best_metrics, history, stale = -1.0, None, [], 0
     out = Path(cfg["out"]) / f"seed_{seed}"
     out.mkdir(parents=True, exist_ok=True)
     for epoch in range(1, cfg["epochs"]+1):
@@ -106,6 +106,12 @@ def train_seed(cfg, seed, xtr, ytr, xva, yva, norm, manifest):
             torch.save({"model_state": {k: v.detach().cpu() for k, v in model.state_dict().items()},
                         "model_kwargs": kwargs, "config": cfg, "normalizer": norm.state_dict(),
                         "split": manifest, "seed": seed, "best_validation": best_metrics}, out / "best.pt")
+            stale = 0
+        else:
+            stale += 1
+        if cfg["patience"] and stale >= cfg["patience"]:
+            print(f"seed={seed} early stop at epoch {epoch}: no validation macro-F1 gain for {stale} epochs", flush=True)
+            break
     (out / "history.json").write_text(json.dumps(history, indent=2) + "\n")
     (out / "validation.json").write_text(json.dumps(best_metrics, indent=2) + "\n")
     return {"seed": seed, "parameters": sum(p.numel() for p in model.parameters()), **best_metrics}
@@ -122,7 +128,8 @@ def parser():
     p.add_argument("--seeds", type=int, nargs="+", default=[0, 1, 2])
     for key, default in [("epochs",20),("batch_size",64),("d_model",32),("d_state",16),
                          ("n_layers",2),("d_conv",4),("split_seed",42),("subset_seed",123),
-                         ("permutation_seed",42),("missing_seed",456),("image_size",14),("threads",2)]:
+                         ("permutation_seed",42),("missing_seed",456),("image_size",14),("threads",2),
+                         ("patience",0)]:
         p.add_argument("--"+key, type=int, default=default)
     p.add_argument("--train_subset", type=int)
     p.add_argument("--val_subjects", type=int, nargs="+")
@@ -134,7 +141,7 @@ def parser():
     p.add_argument("--gap_mode", choices=["ignore","interpolate","delta","channel"], default="ignore")
     p.add_argument("--image_filter", choices=["blur","average","naive","t5_bilinear"], default="blur")
     p.add_argument("--image_mode", choices=["pixel","row"], default="pixel")
-    p.add_argument("--scan", choices=["raster","snake","column","random","blockwise","spiral"], default="raster")
+    p.add_argument("--scan", choices=["raster","snake","column","random","blockwise","spiral","spiral_inward"], default="raster")
     p.add_argument("--device", default="cuda" if torch.cuda.is_available() else "cpu")
     return p
 

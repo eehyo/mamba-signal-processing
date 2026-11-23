@@ -1,0 +1,5 @@
+scan,move,tokens,mean_rel_log_delta
+raster,adjacent move,107351,-0.015468578785657883
+raster,after a spatial jump,18857,0.0021152279805392027
+blockwise,adjacent move,64019,-0.13230837881565094
+blockwise,after a spatial jump,58890,-0.15480543673038483

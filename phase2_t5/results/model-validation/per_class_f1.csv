@@ -1,0 +1,121 @@
+model,scan,class,f1
+mamba,raster,T-shirt/top,0.8238655914214355
+mamba,raster,Trouser,0.9767421950947388
+mamba,raster,Pullover,0.7945943745274491
+mamba,raster,Dress,0.8663109973225384
+mamba,raster,Coat,0.7762546031897157
+mamba,raster,Sandal,0.9511314746590829
+mamba,raster,Shirt,0.6695841456208388
+mamba,raster,Sneaker,0.939488982873656
+mamba,raster,Bag,0.969907143732855
+mamba,raster,Ankle boot,0.9537521523247952
+mamba,snake,T-shirt/top,0.828618991139089
+mamba,snake,Trouser,0.9765272475208763
+mamba,snake,Pullover,0.7962013181186419
+mamba,snake,Dress,0.8743345285835527
+mamba,snake,Coat,0.7934537435662895
+mamba,snake,Sandal,0.9467932407692233
+mamba,snake,Shirt,0.6747282958990604
+mamba,snake,Sneaker,0.9360023620066418
+mamba,snake,Bag,0.9735950404130996
+mamba,snake,Ankle boot,0.9496112422477628
+mamba,random,T-shirt/top,0.8202058564426249
+mamba,random,Trouser,0.9673508414232203
+mamba,random,Pullover,0.7652724683953919
+mamba,random,Dress,0.8649862406278143
+mamba,random,Coat,0.7715668880444991
+mamba,random,Sandal,0.9354837594145894
+mamba,random,Shirt,0.6505886425950219
+mamba,random,Sneaker,0.9294532743912048
+mamba,random,Bag,0.9520515863614643
+mamba,random,Ankle boot,0.9401609612628739
+mamba,blockwise,T-shirt/top,0.8236386168393919
+mamba,blockwise,Trouser,0.9752863275753727
+mamba,blockwise,Pullover,0.7842148531617982
+mamba,blockwise,Dress,0.867926640761688
+mamba,blockwise,Coat,0.7784707881685478
+mamba,blockwise,Sandal,0.9491372227164306
+mamba,blockwise,Shirt,0.6617649602822778
+mamba,blockwise,Sneaker,0.9284689100215986
+mamba,blockwise,Bag,0.9699575768197889
+mamba,blockwise,Ankle boot,0.9447804689038565
+mamba,spiral,T-shirt/top,0.8118414432542685
+mamba,spiral,Trouser,0.9706951231330928
+mamba,spiral,Pullover,0.7808357512940735
+mamba,spiral,Dress,0.8530455533185514
+mamba,spiral,Coat,0.7672252012622843
+mamba,spiral,Sandal,0.9573112588850061
+mamba,spiral,Shirt,0.6540224760703534
+mamba,spiral,Sneaker,0.9352741467973343
+mamba,spiral,Bag,0.9524399773903692
+mamba,spiral,Ankle boot,0.9463519879528967
+mamba,spiral_inward,T-shirt/top,0.8238104379514106
+mamba,spiral_inward,Trouser,0.9721531100227708
+mamba,spiral_inward,Pullover,0.7903936407181736
+mamba,spiral_inward,Dress,0.867533447883447
+mamba,spiral_inward,Coat,0.7782305060325653
+mamba,spiral_inward,Sandal,0.9495971149074327
+mamba,spiral_inward,Shirt,0.6681752646748649
+mamba,spiral_inward,Sneaker,0.9302105041672531
+mamba,spiral_inward,Bag,0.9617886319482012
+mamba,spiral_inward,Ankle boot,0.9473164517770725
+cnn,raster,T-shirt/top,0.6627244291870122
+cnn,raster,Trouser,0.8889290242248732
+cnn,raster,Pullover,0.5984152065189453
+cnn,raster,Dress,0.7023369201767554
+cnn,raster,Coat,0.5848640187593444
+cnn,raster,Sandal,0.8275295650982839
+cnn,raster,Shirt,0.3136096588394384
+cnn,raster,Sneaker,0.8151626517268876
+cnn,raster,Bag,0.8639322638058671
+cnn,raster,Ankle boot,0.8233409985736279
+cnn,snake,T-shirt/top,0.6659598847126519
+cnn,snake,Trouser,0.8771728163943662
+cnn,snake,Pullover,0.5976616791849692
+cnn,snake,Dress,0.7042566049428993
+cnn,snake,Coat,0.570130662749227
+cnn,snake,Sandal,0.8410136652749051
+cnn,snake,Shirt,0.3499469679034914
+cnn,snake,Sneaker,0.8119510082492817
+cnn,snake,Bag,0.8442500781652299
+cnn,snake,Ankle boot,0.8447148525404929
+cnn,random,T-shirt/top,0.7168885648989666
+cnn,random,Trouser,0.9141292397407619
+cnn,random,Pullover,0.5844622083778442
+cnn,random,Dress,0.739041662409015
+cnn,random,Coat,0.6080990994953368
+cnn,random,Sandal,0.7170720467814947
+cnn,random,Shirt,0.37804967565831366
+cnn,random,Sneaker,0.7344245696685316
+cnn,random,Bag,0.830270162145445
+cnn,random,Ankle boot,0.8561817554861383
+cnn,blockwise,T-shirt/top,0.6917392148588627
+cnn,blockwise,Trouser,0.8791499990375996
+cnn,blockwise,Pullover,0.5759852219109337
+cnn,blockwise,Dress,0.7164976154007698
+cnn,blockwise,Coat,0.5336733670017131
+cnn,blockwise,Sandal,0.8195596848380752
+cnn,blockwise,Shirt,0.3426837350961162
+cnn,blockwise,Sneaker,0.7991996950613031
+cnn,blockwise,Bag,0.8367158441532032
+cnn,blockwise,Ankle boot,0.8350191480770531
+cnn,spiral,T-shirt/top,0.702530808787583
+cnn,spiral,Trouser,0.8953056208333727
+cnn,spiral,Pullover,0.5759322929761282
+cnn,spiral,Dress,0.6883234900135915
+cnn,spiral,Coat,0.62340434464013
+cnn,spiral,Sandal,0.8376471862993421
+cnn,spiral,Shirt,0.3306405043875235
+cnn,spiral,Sneaker,0.8148471320545408
+cnn,spiral,Bag,0.6818746201675068
+cnn,spiral,Ankle boot,0.8359352489319472
+cnn,spiral_inward,T-shirt/top,0.7090677239860993
+cnn,spiral_inward,Trouser,0.8878122394204172
+cnn,spiral_inward,Pullover,0.5904059084940791
+cnn,spiral_inward,Dress,0.6824009303269358
+cnn,spiral_inward,Coat,0.6220783183346416
+cnn,spiral_inward,Sandal,0.8361307007572433
+cnn,spiral_inward,Shirt,0.32398861531157913
+cnn,spiral_inward,Sneaker,0.8188179000761299
+cnn,spiral_inward,Bag,0.6217137725512291
+cnn,spiral_inward,Ankle boot,0.8553863136614326
