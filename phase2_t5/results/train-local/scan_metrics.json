@@ -1,0 +1,70 @@
+{
+  "raster": {
+    "mean_coordinate_distance": 1.8025603206936862,
+    "nonadjacent_moves": 13,
+    "jump_window_fraction_w4": 0.20207253886010362,
+    "mean_window_extent_w4": 5.028485946144076,
+    "jump_window_fraction_w7": 0.4105263157894737,
+    "mean_window_extent_w7": 8.889450395850595,
+    "row_boundary_ratio": 0.5460588335990906,
+    "harmonic_energy_share": 0.5610743020462885,
+    "fundamental_prominence": 212.838258708886,
+    "mean_abs_pixel_diff": 0.09590449929237366
+  },
+  "snake": {
+    "mean_coordinate_distance": 1.0,
+    "nonadjacent_moves": 0,
+    "jump_window_fraction_w4": 0.0,
+    "mean_window_extent_w4": 2.79027224728417,
+    "jump_window_fraction_w7": 0.0,
+    "mean_window_extent_w7": 5.231549856757103,
+    "row_boundary_ratio": 0.27192869782447815,
+    "harmonic_energy_share": 0.5144364274769618,
+    "fundamental_prominence": 99.12465713076412,
+    "mean_abs_pixel_diff": 0.09409716725349426
+  },
+  "random": {
+    "mean_coordinate_distance": 7.1720815964885265,
+    "nonadjacent_moves": 193,
+    "jump_window_fraction_w4": 1.0,
+    "mean_window_extent_w4": 11.392239144381517,
+    "jump_window_fraction_w7": 1.0,
+    "mean_window_extent_w7": 13.551468123469647,
+    "harmonic_energy_share": 0.08868664908585841,
+    "fundamental_prominence": 2.7572229017181997,
+    "mean_abs_pixel_diff": 0.2879008948802948
+  },
+  "blockwise": {
+    "mean_coordinate_distance": 1.5637121181455564,
+    "nonadjacent_moves": 97,
+    "jump_window_fraction_w4": 1.0,
+    "mean_window_extent_w4": 3.243562810939681,
+    "jump_window_fraction_w7": 1.0,
+    "mean_window_extent_w7": 5.421154739621462,
+    "harmonic_energy_share": 0.08587132332738369,
+    "fundamental_prominence": 15.2213531391651,
+    "mean_abs_pixel_diff": 0.10881099104881287
+  },
+  "spiral": {
+    "mean_coordinate_distance": 1.0,
+    "nonadjacent_moves": 0,
+    "jump_window_fraction_w4": 0.0,
+    "mean_window_extent_w4": 2.7978318365795998,
+    "jump_window_fraction_w7": 0.0,
+    "mean_window_extent_w7": 5.158519159354388,
+    "harmonic_energy_share": 0.023184075577369855,
+    "fundamental_prominence": 0.566174054195858,
+    "mean_abs_pixel_diff": 0.07196517288684845
+  },
+  "spiral_inward": {
+    "mean_coordinate_distance": 1.0,
+    "nonadjacent_moves": 0,
+    "jump_window_fraction_w4": 0.0,
+    "mean_window_extent_w4": 2.7978318365795998,
+    "jump_window_fraction_w7": 0.0,
+    "mean_window_extent_w7": 5.158519159354389,
+    "harmonic_energy_share": 0.023184075230798937,
+    "fundamental_prominence": 0.566174049882137,
+    "mean_abs_pixel_diff": 0.07196520268917084
+  }
+}

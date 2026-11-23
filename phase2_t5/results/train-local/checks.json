@@ -1,0 +1,65 @@
+{
+  "inward_vs_outward": {
+    "mean_abs_pixel_diff": [
+      0.07196517288684845,
+      0.07196520268917084
+    ],
+    "max_relative_psd_difference": 3.722271445258336e-09,
+    "mean_coordinate_distance": [
+      1.0,
+      1.0
+    ]
+  },
+  "handoff_reference": {
+    "raster": {
+      "mean_coordinate_distance": 1.803,
+      "mean_abs_pixel_diff": 0.0959
+    },
+    "snake": {
+      "mean_coordinate_distance": 1.0,
+      "mean_abs_pixel_diff": 0.0941
+    },
+    "random": {
+      "mean_coordinate_distance": 7.172,
+      "mean_abs_pixel_diff": 0.2879
+    },
+    "blockwise": {
+      "mean_coordinate_distance": 1.564,
+      "mean_abs_pixel_diff": 0.1088
+    },
+    "spiral": {
+      "mean_coordinate_distance": 1.0,
+      "mean_abs_pixel_diff": 0.072
+    },
+    "spiral_inward": {
+      "mean_coordinate_distance": 1.0,
+      "mean_abs_pixel_diff": 0.072
+    }
+  },
+  "window4": {
+    "raster": {
+      "nonadjacent_moves": 13,
+      "jump_window_fraction": 0.202
+    },
+    "snake": {
+      "nonadjacent_moves": 0,
+      "jump_window_fraction": 0.0
+    },
+    "random": {
+      "nonadjacent_moves": 193,
+      "jump_window_fraction": 1.0
+    },
+    "blockwise": {
+      "nonadjacent_moves": 97,
+      "jump_window_fraction": 1.0
+    },
+    "spiral": {
+      "nonadjacent_moves": 0,
+      "jump_window_fraction": 0.0
+    },
+    "spiral_inward": {
+      "nonadjacent_moves": 0,
+      "jump_window_fraction": 0.0
+    }
+  }
+}

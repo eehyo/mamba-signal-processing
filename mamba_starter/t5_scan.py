@@ -6,6 +6,9 @@ import numpy as np
 SIZE = 14
 DEFAULT_SEED = 42
 SCANS = ("axis_aligned", "snake", "random", "blockwise", "spiral")
+# Control condition: the outward spiral visited in reverse (edge -> centre).
+# Kept out of SCANS so the main five-condition analysis is unchanged.
+EXTRA_SCANS = ("spiral_inward",)
 
 
 def _spiral(size):
@@ -39,8 +42,11 @@ def scan_indices(scan, *, direction="raster", seed=DEFAULT_SEED):
     elif scan == "spiral":
         row, col = np.asarray(_spiral(SIZE)).T
         indices = grid[row, col]
+    elif scan == "spiral_inward":
+        row, col = np.asarray(_spiral(SIZE)[::-1]).T
+        indices = grid[row, col]
     else:
-        raise ValueError(f"Unknown scan {scan!r}. Expected one of {SCANS}")
+        raise ValueError(f"Unknown scan {scan!r}. Expected one of {SCANS + EXTRA_SCANS}")
     indices = indices.ravel()
     if not np.array_equal(np.sort(indices), np.arange(grid.size)):
         raise ValueError(f"{scan} does not visit every pixel exactly once")

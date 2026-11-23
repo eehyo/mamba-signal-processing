@@ -1,0 +1,6 @@
+scan,layer,delta_median,delta_p05,delta_p95,state,half_life_median_tokens
+raster,1,0.009235563687980175,0.0008512006024830043,0.17874225974082947,,
+raster,2,0.012242976576089859,0.0003582559002097696,0.6529495120048523,,
+raster,1,,,,slowest state (min |A|),67.8536634600551
+raster,1,,,,median state,9.060725125176686
+raster,1,,,,fastest state (max |A|),4.340952410707576

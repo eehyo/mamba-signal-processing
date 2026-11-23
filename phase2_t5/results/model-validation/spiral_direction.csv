@@ -1,0 +1,3 @@
+model,seeds,inward_minus_outward,positive_seeds
+mamba,3,0.006016619072496139,3
+cnn,3,-0.0038638826171879157,1
