@@ -1,0 +1,7 @@
+group,split,inward_minus_outward,per_seed,inward_better
+mamba,test,+0.0078,+0.0071 +0.0097 +0.0065,3/3
+mamba,validation,+0.0060,+0.0036 +0.0080 +0.0065,3/3
+cnn,test,-0.0019,-0.0028 -0.0008 -0.0021,0/3
+cnn,validation,-0.0039,-0.0076 +0.0016 -0.0056,1/3
+cnn60,test,-0.0189,-0.0060 -0.0098 -0.0410,0/3
+cnn60,validation,-0.0200,-0.0020 -0.0126 -0.0455,0/3

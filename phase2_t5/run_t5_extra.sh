@@ -3,7 +3,8 @@
 #   cnn      - 1D CNN baseline, 6 scans x seeds 0 1 2 (CPU, minutes)
 #   cnn60    - supplementary CNN: up to 60 epochs, stop after 5 epochs without gain (CPU)
 #   inward   - Mamba on the inward spiral, one process per seed (GPU, ~2 h each)
-# Usage: bash phase2_t5/run_t5_extra.sh cnn|cnn60|inward
+#   column   - column scan (T5 minimum scope): Mamba one process per seed (GPU) + CNN (CPU)
+# Usage: bash phase2_t5/run_t5_extra.sh cnn|cnn60|inward|column
 set -euo pipefail
 
 root="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
@@ -64,5 +65,32 @@ case "${1:-}" in
     echo "$(date -Is) Inward runs finished (status $status)"
     exit "$status"
     ;;
-  *) echo "usage: $0 cnn|cnn60|inward" >&2; exit 2 ;;
+  column)  # T5 minimum scope: column scan, Mamba (outputs/t5-mamba-validation-column) and CNN (outputs/t5-cnn-validation/column)
+    mout="$root/outputs/t5-mamba-validation-column"
+    cout="$root/outputs/t5-cnn-validation"
+    mkdir -p "$mout" "$cout"
+    gpus=(${COLUMN_GPUS:-1 1 1})
+    pids=()
+    for seed in 0 1 2; do
+      run="$mout/column_seed$seed"
+      if [[ -f "$run/seed_$seed/validation.json" ]]; then echo "skip column seed $seed (done)"; continue; fi
+      rm -rf "$run"
+      CUDA_VISIBLE_DEVICES="${gpus[$seed]}" "$python" -u train.py "${common[@]}" --model mamba \
+        --device cuda --scan column --seeds "$seed" --out "$run" > "$run.log" 2>&1 &
+      pids+=($!)
+      echo "$(date -Is) Started Mamba column seed $seed on GPU ${gpus[$seed]} (pid ${pids[-1]})"
+    done
+    if [[ ! -f "$cout/column/summary.json" ]]; then
+      rm -rf "$cout/column"
+      CUDA_VISIBLE_DEVICES="" "$python" -u train.py "${common[@]}" --model cnn --device cpu --scan column \
+        --seeds 0 1 2 --out "$cout/column" > "$cout/column.log" 2>&1 &
+      pids+=($!)
+      echo "$(date -Is) Started CNN column (pid ${pids[-1]})"
+    fi
+    status=0
+    for pid in "${pids[@]}"; do wait "$pid" || status=1; done
+    echo "$(date -Is) Column runs finished (status $status)"
+    exit "$status"
+    ;;
+  *) echo "usage: $0 cnn|cnn60|inward|column" >&2; exit 2 ;;
 esac
